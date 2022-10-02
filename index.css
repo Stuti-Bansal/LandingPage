@@ -1,0 +1,152 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: gilroy; 
+}
+html, body{ 
+    width : 100%;
+    height :100%;
+    overflow: hidden;
+} 
+#main{ 
+    width: 100%;
+    height: 100%;
+    background-color: #F6AD8B;
+}
+#video{
+    overflow: hidden;
+    position: absolute;
+    height: 70%;
+    width: 22%;
+    /* background-color: bisque; */
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#video video{
+    height: 100%;
+}
+h1{
+    position: absolute;
+    color: #fff;
+    font-size: 10vw;
+    left:40%;
+    top:47%;
+
+}
+#nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #fff;
+    height: 60px;
+    width: 95%;
+    margin-left:2%;
+
+}
+#nav1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 40%;
+}
+#nav1 h5{
+    position: relative;
+    margin-left: 40px;
+    
+}
+#nav1 h5:nth-child(1){
+    color: black;
+    opacity: 50%;
+}
+button{
+    padding: 8px 20px;
+    background-color:#c78667;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    width: 70px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #d69373;
+    cursor: pointer;
+}
+#warn{
+    font-size: 15px;
+    position: absolute;
+    background-color: #c68566;
+    bottom: 5%;
+    left: 5%;
+    font-weight: 500;
+    padding: 10px;
+    width: 200px;
+    color: #000;
+}
+#slidedown{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 4%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#slidedown h4{
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #fff;
+}
+#slidedown h6{
+    animation: anim 1s ease-in-out infinite  both;
+}
+@media(max-width:500px){
+    #nav{
+        align-items: center;
+        height: 100px;
+        padding: 0 30px;
+    }
+    #nav button{
+        font-size:10px ;
+        padding: 7px 12px;
+        
+    }
+    #main h1{
+        font-size: 15vw;
+        left:25%;
+    }
+    #video{
+        width: 80%;
+        height: 40%;
+        left:60%;
+    }
+    #warn{
+        bottom: 10%;
+    }
+    #slidedown{
+        width: 100%;
+    }
+    #nav1{
+        /* margin-right: 13px; */
+        right: 10%;
+        font-size: 15px;
+    }
+}
+@keyframes anim{
+    0%{
+        margin-bottom: 10px;
+    }
+    50%{
+        margin-bottom: 0px;
+    }
+    100%{
+        margin-bottom: 10px;
+    }
+}
